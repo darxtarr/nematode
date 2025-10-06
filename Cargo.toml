@@ -2,7 +2,9 @@
 members = [
     "core/reflex-format",
     "core/telemetry",
+    "core/telemetry-compute",
     "sim",
+    "sim-compute",
 ]
 resolver = "2"
 

@@ -195,6 +195,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "sim-compute"
+version = "0.1.0"
+dependencies = [
+ "rand",
+ "reflex-format",
+ "serde",
+ "serde_json",
+ "telemetry-compute",
+]
+
+[[package]]
 name = "syn"
 version = "2.0.106"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -207,6 +218,14 @@ dependencies = [
 
 [[package]]
 name = "telemetry"
+version = "0.1.0"
+dependencies = [
+ "serde",
+ "serde_json",
+]
+
+[[package]]
+name = "telemetry-compute"
 version = "0.1.0"
 dependencies = [
  "serde",
