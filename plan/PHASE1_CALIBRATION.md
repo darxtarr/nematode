@@ -16,7 +16,7 @@ Duration: ≈ 2 weeks (one per day, with weekends for analysis).
 |:--:|:--|:--|:--|:--|:--|:--|:--|:--|:--|
 | 🜁 1 | **Networking / Transport** | *Chronome Batching v2* – adaptive `{threshold, delay}` | p95 latency | Sonny | ☐ planned | — | — | — | baseline validated |
 | 🜂 2 | **Storage / I-O** | *Prefetch Depth* – choose `{32–512 KB}` | read hit ratio vs tail latency | Gemma | ☐ planned | — | — | — | synthetic fio trace |
-| 🜃 3 | **Compute / Scheduling** | *Thread-Pool Size* – adjust `N_threads` | throughput vs p95 task time | Sonny | ☐ planned | — | — | — | Rayon microbench |
+| 🜃 3 | **Compute / Scheduling** | *Thread-Pool Size* – adjust `N_threads` | throughput vs p95 task time | Sonny | 🔄 baseline | fa5721a4 | 325 | −3.2% | v1: oracle bias, all N=2 |
 | 🜄 4 | **Graphics / WebGPU** | *Frame-Pacing Reflex* – modulate `present_delay` | frame-time jitter | Gemma | ☐ planned | — | — | — | WRWW sim harness |
 | 🜅 5 | **Compression / Codec** | *Adaptive Level* – choose `{off,1,3,6}` | compression ratio vs CPU µs | Sonny | ☐ planned | — | — | — | dataset : text + binary |
 | 🜆 6 | **Sensing / Robotics** | *Sampling-Rate Reflex* – tune Hz based on variance | energy vs event miss rate | Gemma | ☐ planned | — | — | — | sensor log replay |
@@ -73,9 +73,9 @@ Duration: ≈ 2 weeks (one per day, with weekends for analysis).
 ## 🧾 Schedule Template
 | Day | Reflex | Lead | Expected Runtime | Status |
 |------|---------|------|------------------|--------|
-| D1 | Chronome Batching v2 | Sonny | ~30 min training + 5 min replay | ☐ |
+| D1 | Chronome Batching v2 | Sonny | ~30 min training + 5 min replay | ✅ |
 | D2 | Prefetch Depth | Gemma | ~15 min | ☐ |
-| D3 | Thread-Pool Size | Sonny | ~20 min | ☐ |
+| D3 | Thread-Pool Size | Sonny | ~20 min | 🔄 |
 | D4 | Frame-Pacing Reflex | Gemma | ~25 min | ☐ |
 | D5 | Adaptive Compression | Sonny | ~15 min | ☐ |
 | D6 | Sampling-Rate Reflex | Gemma | ~20 min | ☐ |
