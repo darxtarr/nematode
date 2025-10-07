@@ -29,6 +29,8 @@ __pycache__/
 
 # Data & outputs
 data/telemetry/*.csv
+data/telemetry/chunks/
+data/telemetry/empirical-results/
 data/models/*.reflex
 data/models/*.json
 results/

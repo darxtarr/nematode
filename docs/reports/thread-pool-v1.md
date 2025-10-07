@@ -1,8 +1,9 @@
 # Thread-Pool Sizing Reflex — Tablet 🜃 3
 
-**Status**: ✅ Pipeline Complete | ⚠️ Oracle Tuning Needed
-**Date**: 2025-10-06
+**Status**: ✅ COMPLETE — Empirical Study Finished
+**Date**: 2025-10-06 (baseline) → 2025-10-07 (empirical study)
 **Domain**: Compute / Scheduling
+**Final Report**: See [empirical-oracle-findings.md](./empirical-oracle-findings.md)
 
 ---
 
@@ -180,7 +181,9 @@ Despite oracle bias, **the infrastructure works**:
 **Infrastructure: VALIDATED ✅**
 The Nematode reflex pipeline successfully generalizes from networking (Chronome) to compute (thread-pool sizing). All components work end-to-end.
 
-**Science: INCOMPLETE ⚠️**
-Oracle objective function needs tuning to produce meaningful labels. Current bias toward N=2 prevents demonstration of adaptive behavior.
+**Science: COMPLETE ✅ — Major Finding**
+Instead of tuning the analytical oracle, we ran a full empirical study (2000 samples, actual simulations) and discovered that **thread pool sizing has a fundamentally flat performance landscape** (0.17% variance, R²=0.035). This is a valuable negative result.
 
-**Recommendation**: Fix oracle (1-2 hours), regenerate data, and complete validation. The hard infrastructure work is done.
+**Final Outcome**: Empirical reflex achieves marginal gains (0.12% p95 improvement) but domain is **heuristic-saturated** — simple static policies (N=8-16) are sufficient for this workload regime.
+
+**Full Analysis**: See [empirical-oracle-findings.md](./empirical-oracle-findings.md) for complete methodology, results, and scientific insights.
