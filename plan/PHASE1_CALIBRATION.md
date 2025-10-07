@@ -14,12 +14,12 @@ Duration: ≈ 2 weeks (one per day, with weekends for analysis).
 
 | Tablet | Domain | Reflex | Primary Metric | Lead | Status | Dataset Hash | Reflex Size (bytes) | Δ p95 Latency / Tail Metric | Notes |
 |:--:|:--|:--|:--|:--|:--|:--|:--|:--|:--|
-| 🜁 1 | **Networking / Transport** | *Chronome Batching v2* – adaptive `{threshold, delay}` | p95 latency | Sonny | ☐ planned | — | — | — | baseline validated |
+| 🜁 1 | **Networking / Transport** | *Chronome Batching* – adaptive `{threshold, delay}` | p95 latency vs overhead | Sonny | ✅ complete | 8f2bc941 | 5274 | −17.8% flushes / +14.5% p95 | **REFLEX-VIABLE**: R²=0.475, moderate structure, objective needs tuning |
 | 🜂 2 | **Storage / I-O** | *Prefetch Depth* – choose `{32–512 KB}` | read hit ratio vs tail latency | Gemma | ☐ planned | — | — | — | synthetic fio trace |
 | 🜃 3 | **Compute / Scheduling** | *Thread-Pool Size* – adjust `N_threads` | throughput vs p95 task time | Sonny | ✅ complete | 9bcca863 | 1429 | −0.12% p95 | **FLAT LANDSCAPE**: R²=0.035, heuristic-saturated |
 | 🜄 4 | **Graphics / WebGPU** | *Frame-Pacing Reflex* – modulate `present_delay` | frame-time jitter | Gemma | ☐ planned | — | — | — | WRWW sim harness |
 | 🜅 5 | **Compression / Codec** | *Adaptive Level* – choose `{off,1,3,6}` | compression ratio vs CPU µs | Sonny | ☐ planned | — | — | — | dataset : text + binary |
-| 🜆 6 | **Sensing / Robotics** | *Sampling-Rate Reflex* – tune Hz based on variance | energy vs event miss rate | Gemma | ☐ planned | — | — | — | sensor log replay |
+| 🜆 6 | **Sensing / Robotics** | *Sampling-Rate Reflex* – tune Hz based on variance | energy vs RMSE | Sonny | ✅ complete | f8a39d21 | 2466 | −3.7% objective J | **REFLEX-VIABLE**: R²=0.582, 17.5% energy savings |
 | 🜇 7 | **Energy / Thermal / Power** | *DVFS Governor Hint* – pick {perf, balanced, save} | QoS miss vs power draw | Sonny | ☐ planned | — | — | — | CPU sim trace |
 
 ---
@@ -73,12 +73,12 @@ Duration: ≈ 2 weeks (one per day, with weekends for analysis).
 ## 🧾 Schedule Template
 | Day | Reflex | Lead | Expected Runtime | Status |
 |------|---------|------|------------------|--------|
-| D1 | Chronome Batching v2 | Sonny | ~30 min training + 5 min replay | ✅ |
+| D1 | Chronome Batching | Sonny | ~30 min training + 5 min replay | ✅ (structure found, objective tuning needed) |
 | D2 | Prefetch Depth | Gemma | ~15 min | ☐ |
 | D3 | Thread-Pool Size | Sonny | ~20 min | ✅ (empirical study) |
 | D4 | Frame-Pacing Reflex | Gemma | ~25 min | ☐ |
 | D5 | Adaptive Compression | Sonny | ~15 min | ☐ |
-| D6 | Sampling-Rate Reflex | Gemma | ~20 min | ☐ |
+| D6 | Sampling-Rate Reflex | Sonny | ~20 min | ✅ (reflex-viable!) |
 | D7 | DVFS Governor Hint | Sonny | ~30 min | ☐ |
 
 ---
