@@ -1,4 +1,4 @@
-//! Nematode Telemetry Schema v1
+//! Reflex Telemetry Schema v1
 //!
 //! Defines the feature schema for Chronome batch reflexes.
 

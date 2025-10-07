@@ -1,6 +1,6 @@
 # Overview
 
-Nematode is a sandbox for **KML-style reflexes** — small deterministic models that adapt runtime policies locally.
+Reflex is a sandbox for **KML-style reflexes** — small deterministic models that adapt runtime policies locally.
 
 It isolates the reflex concept from larger projects like *Chorus* so that we can iterate quickly and test boundaries.
 

@@ -217,7 +217,7 @@ def serialize_reflex(
 def train_and_export(training_csv, output_reflex, lambda_param=0.1):
     """Full training pipeline"""
     print("=" * 60)
-    print("NEMATODE TRAINER")
+    print("REFLEX TRAINER")
     print("=" * 60)
 
     # Load data

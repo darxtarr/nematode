@@ -1,4 +1,4 @@
-//! Nematode Reflex Binary Format
+//! Reflex Binary Format
 //!
 //! Binary container for trained reflex models.
 //! Layout: [Header][Model][Bounds][Metadata][Checksum]

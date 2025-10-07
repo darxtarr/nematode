@@ -17,7 +17,7 @@ Built complete end-to-end pipeline for thread-pool sizing reflex:
 - ✅ Decision tree trainer → .reflex export
 - ✅ Baseline vs reflex validation harness
 
-**Key Achievement**: Validated that Nematode architecture generalizes beyond networking (Chronome) to compute domain.
+**Key Achievement**: Validated that Reflex architecture generalizes beyond networking (Chronome) to compute domain.
 
 ---
 
@@ -179,7 +179,7 @@ Despite oracle bias, **the infrastructure works**:
 ## Conclusion
 
 **Infrastructure: VALIDATED ✅**
-The Nematode reflex pipeline successfully generalizes from networking (Chronome) to compute (thread-pool sizing). All components work end-to-end.
+The Reflex pipeline successfully generalizes from networking (Chronome) to compute (thread-pool sizing). All components work end-to-end.
 
 **Science: COMPLETE ✅ — Major Finding**
 Instead of tuning the analytical oracle, we ran a full empirical study (2000 samples, actual simulations) and discovered that **thread pool sizing has a fundamentally flat performance landscape** (0.17% variance, R²=0.035). This is a valuable negative result.

@@ -1,8 +1,8 @@
-# 🧬 Nematode
+# 🧬 Reflex
 
 **Reflexive Machine Learning for Systems**
 
-Nematode explores how *tiny, offline-trained models* can replace static heuristics inside performance-critical loops.  
+Reflex explores how *tiny, offline-trained models* can replace static heuristics inside performance-critical loops.
 Inspired by the **Kernel Machine Learning (KML)** project from Stony Brook (S. Shankar, A. Zadok et al., 2023–25), it extends the idea to user-space and distributed nodes.
 
 ## Concept

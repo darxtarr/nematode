@@ -1,8 +1,8 @@
 # 🌱 Phase 1 — Calibration  
 *(Seven-Tablet Validation of Tiny-ML Reflexes)*
 
-Purpose:  
-Verify that the Nematode forge generalizes beyond Chronome by training and testing one reflex per domain.  
+Purpose:
+Verify that the Reflex forge generalizes beyond Chronome by training and testing one reflex per domain.  
 Each seed will run through the complete loop  
 → telemetry → oracle → train → `.reflex` → replay → metrics → report.
 

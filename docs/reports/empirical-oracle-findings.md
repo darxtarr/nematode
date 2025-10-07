@@ -342,7 +342,7 @@ This is **real science**: We tested our hypothesis (analytical oracle needs tuni
 
 The 0.1-0.6% improvements from empirical reflex are **statistically real but practically marginal**. For production systems, simple heuristics (static N=8-16) are likely sufficient unless workload characteristics change dramatically.
 
-**The journey was more valuable than the destination** — we built reusable infrastructure for empirical oracle evaluation that can be applied to future Nematode experiments.
+**The journey was more valuable than the destination** — we built reusable infrastructure for empirical oracle evaluation that can be applied to future Reflex experiments.
 
 ---
 

@@ -1,4 +1,4 @@
-Each entry = a candidate reflex ready for Nematode trials: knobs → inputs → cadence → objective → win test. This is the experiment backlog.
+Each entry = a candidate reflex ready for Reflex trials: knobs → inputs → cadence → objective → win test. This is the experiment backlog.
 
 ## 1) Networking / Transport
 

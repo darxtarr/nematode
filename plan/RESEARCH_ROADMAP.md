@@ -1,4 +1,4 @@
-# 🪱 Nematode Research Roadmap — 7×7 Tiny-ML Domains
+# 🪱 Reflex Research Roadmap — 7×7 Tiny-ML Domains
 **Date:** 2025-10-08
 **Purpose:** Identify domains with measurable curvature (non-flat performance landscapes) suitable for sub-kilobyte reflexes.
 **Format:** Each row = target domain; each column = core design axes for reflex viability.

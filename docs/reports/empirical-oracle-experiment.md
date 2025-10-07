@@ -87,11 +87,11 @@ Each chunk takes ~400s (6.7 min) at 2s/sample.
 
 ```bash
 # Terminal 0
-cd /home/u/code/nematode
+cd /home/u/code/reflex
 source venv/bin/activate && python forge/oracle_compute_empirical.py data/telemetry/chunks/chunk_000.csv data/telemetry/empirical-results/empirical_000.csv all 2 2>&1 | tee data/telemetry/empirical-results/log_0.txt
 
 # Terminal 1
-cd /home/u/code/nematode
+cd /home/u/code/reflex
 source venv/bin/activate && python forge/oracle_compute_empirical.py data/telemetry/chunks/chunk_001.csv data/telemetry/empirical-results/empirical_001.csv all 2 2>&1 | tee data/telemetry/empirical-results/log_1.txt
 
 # ... (repeat for chunks 2-9)
@@ -100,7 +100,7 @@ source venv/bin/activate && python forge/oracle_compute_empirical.py data/teleme
 **Option 2: GNU Parallel (automated)**
 
 ```bash
-cd /home/u/code/nematode
+cd /home/u/code/reflex
 parallel -j 10 'source venv/bin/activate && python forge/oracle_compute_empirical.py data/telemetry/chunks/chunk_{}.csv data/telemetry/empirical-results/empirical_{}.csv all 2 > data/telemetry/empirical-results/log_{}.txt 2>&1' ::: $(seq -w 0 9)
 ```
 

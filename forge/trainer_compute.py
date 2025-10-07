@@ -217,7 +217,7 @@ def export_normalizer(mins, maxs, output_path):
 def train_and_export(training_csv, output_reflex, normalizer_path):
     """Full training pipeline"""
     print("=" * 60)
-    print("NEMATODE TRAINER: COMPUTE")
+    print("REFLEX TRAINER: COMPUTE")
     print("=" * 60)
 
     # Load data
